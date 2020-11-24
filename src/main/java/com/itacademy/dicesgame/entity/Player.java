@@ -8,13 +8,11 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
-//@Entity
-//@Table(name="player")
+
 @Document(collection = "player")
 public class Player {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     private String name;

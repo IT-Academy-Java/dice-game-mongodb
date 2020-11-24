@@ -6,13 +6,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import javax.persistence.*;
 import java.io.Serializable;
 
-//@Entity
-//@Table(name="game")
 @Document(collection = "game")
 public class Game implements Serializable {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     private int dice_value1;
@@ -23,8 +20,6 @@ public class Game implements Serializable {
     @JsonIgnore
     @JoinColumn(name="player_id")
     private Player player;
-
-    /**private Long player_id;*/
 
     public Game (){}
 
