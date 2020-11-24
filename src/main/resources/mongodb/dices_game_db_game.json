@@ -1,0 +1,222 @@
+[{
+  "_id": {
+    "$oid": "5fbcd2f21b245a6c4a801db1"
+  },
+  "dice_value1": 4,
+  "dice_value2": 4,
+  "win": false,
+  "player": {
+    "_id": {
+      "$oid": "5fbccc4a1b245a6c4a801dad"
+    },
+    "name": "elenita",
+    "registration_date": {
+      "$date": "2020-11-19T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd2f61b245a6c4a801db2"
+  },
+  "dice_value1": 2,
+  "dice_value2": 5,
+  "win": true,
+  "player": {
+    "_id": {
+      "$oid": "5fbccc4a1b245a6c4a801dad"
+    },
+    "name": "elenita",
+    "registration_date": {
+      "$date": "2020-11-19T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd33f1b245a6c4a801dc1"
+  },
+  "dice_value1": 3,
+  "dice_value2": 1,
+  "win": false,
+  "player": {
+    "_id": {
+      "$oid": "5fbccca71b245a6c4a801daf"
+    },
+    "name": "yukito",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd3401b245a6c4a801dc2"
+  },
+  "dice_value1": 1,
+  "dice_value2": 1,
+  "win": false,
+  "player": {
+    "_id": {
+      "$oid": "5fbccca71b245a6c4a801daf"
+    },
+    "name": "yukito",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd3411b245a6c4a801dc3"
+  },
+  "dice_value1": 3,
+  "dice_value2": 2,
+  "win": false,
+  "player": {
+    "_id": {
+      "$oid": "5fbccca71b245a6c4a801daf"
+    },
+    "name": "yukito",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd34c1b245a6c4a801dc4"
+  },
+  "dice_value1": 4,
+  "dice_value2": 4,
+  "win": false,
+  "player": {
+    "_id": {
+      "$oid": "5fbcccac1b245a6c4a801db0"
+    },
+    "name": "shaoran",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd34d1b245a6c4a801dc5"
+  },
+  "dice_value1": 6,
+  "dice_value2": 1,
+  "win": true,
+  "player": {
+    "_id": {
+      "$oid": "5fbcccac1b245a6c4a801db0"
+    },
+    "name": "shaoran",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd34f1b245a6c4a801dc6"
+  },
+  "dice_value1": 5,
+  "dice_value2": 5,
+  "win": false,
+  "player": {
+    "_id": {
+      "$oid": "5fbcccac1b245a6c4a801db0"
+    },
+    "name": "shaoran",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd3501b245a6c4a801dc7"
+  },
+  "dice_value1": 3,
+  "dice_value2": 6,
+  "win": false,
+  "player": {
+    "_id": {
+      "$oid": "5fbcccac1b245a6c4a801db0"
+    },
+    "name": "shaoran",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd3511b245a6c4a801dc8"
+  },
+  "dice_value1": 1,
+  "dice_value2": 6,
+  "win": true,
+  "player": {
+    "_id": {
+      "$oid": "5fbcccac1b245a6c4a801db0"
+    },
+    "name": "shaoran",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd4651b245a6c4a801dc9"
+  },
+  "dice_value1": 3,
+  "dice_value2": 4,
+  "win": true,
+  "player": {
+    "_id": {
+      "$oid": "5fbccca11b245a6c4a801dae"
+    },
+    "name": "sakura",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd4681b245a6c4a801dca"
+  },
+  "dice_value1": 2,
+  "dice_value2": 2,
+  "win": false,
+  "player": {
+    "_id": {
+      "$oid": "5fbccca11b245a6c4a801dae"
+    },
+    "name": "sakura",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+},{
+  "_id": {
+    "$oid": "5fbcd4691b245a6c4a801dcb"
+  },
+  "dice_value1": 5,
+  "dice_value2": 2,
+  "win": true,
+  "player": {
+    "_id": {
+      "$oid": "5fbccca11b245a6c4a801dae"
+    },
+    "name": "sakura",
+    "registration_date": {
+      "$date": "2020-11-24T00:00:00Z"
+    }
+  },
+  "_class": "com.itacademy.dicesgame.entity.Game"
+}]

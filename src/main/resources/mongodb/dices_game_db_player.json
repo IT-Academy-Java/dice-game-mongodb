@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "5fbccc4a1b245a6c4a801dad"
+  },
+  "name": "elenita",
+  "registration_date": {
+    "$date": "2020-11-19T00:00:00Z"
+  },
+  "_class": "com.itacademy.dicesgame.entity.Player"
+},{
+  "_id": {
+    "$oid": "5fbccca11b245a6c4a801dae"
+  },
+  "name": "sakura",
+  "registration_date": {
+    "$date": "2020-11-24T00:00:00Z"
+  },
+  "_class": "com.itacademy.dicesgame.entity.Player"
+},{
+  "_id": {
+    "$oid": "5fbccca71b245a6c4a801daf"
+  },
+  "name": "yukito",
+  "registration_date": {
+    "$date": "2020-11-24T00:00:00Z"
+  },
+  "_class": "com.itacademy.dicesgame.entity.Player"
+},{
+  "_id": {
+    "$oid": "5fbcccac1b245a6c4a801db0"
+  },
+  "name": "shaoran",
+  "registration_date": {
+    "$date": "2020-11-24T00:00:00Z"
+  },
+  "_class": "com.itacademy.dicesgame.entity.Player"
+}]

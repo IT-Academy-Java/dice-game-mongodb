@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "dac12604-af02-4bb3-9c74-5622b0996c93",
-		"name": "Dices-Game",
+		"_postman_id": "67f124f5-b586-45f7-86d4-ac7495dcffb1",
+		"name": "DicesGame-Mongo",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -11,12 +11,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/players",
+					"raw": "http://localhost:8090/players",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"players"
 					]
@@ -31,7 +31,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"name\": \"Jonatan\",\n\"registration_date\": \"2020-11-19\"\n}",
+					"raw": "{\n\"name\": \"shaoran\",\n\"registration_date\": \"2020-11-24\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -39,12 +39,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/players/",
+					"raw": "http://localhost:8090/players/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"players",
 						""
@@ -60,7 +60,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"name\": \"Jonatan Profe\"\n}",
+					"raw": "{\n\"name\": \"elenita\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -68,36 +68,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/players/14",
+					"raw": "http://localhost:8090/players/5fbccc4a1b245a6c4a801dad",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"players",
-						"14"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete games by id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/players/14/games",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"players",
-						"14",
-						"games"
+						"5fbccc4a1b245a6c4a801dad"
 					]
 				}
 			},
@@ -109,15 +88,36 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/players/14/games",
+					"raw": "http://localhost:8090/players/5fbccca11b245a6c4a801dae/games",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"players",
-						"14",
+						"5fbccca11b245a6c4a801dae",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete games by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/players/5fbccca11b245a6c4a801dae/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"players",
+						"5fbccca11b245a6c4a801dae",
 						"games"
 					]
 				}
@@ -130,15 +130,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/players/1/games",
+					"raw": "http://localhost:8090/players/5fbccca11b245a6c4a801dae/games",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"players",
-						"1",
+						"5fbccca11b245a6c4a801dae",
 						"games"
 					]
 				}
@@ -151,35 +151,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/players/",
+					"raw": "http://localhost:8090/players/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"players",
 						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Ranking",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/players/ranking",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"players",
-						"ranking"
 					]
 				}
 			},
@@ -191,12 +171,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/players/ranking/loser",
+					"raw": "http://localhost:8090/players/ranking/loser",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"players",
 						"ranking",
@@ -212,16 +192,36 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/players/ranking/winner",
+					"raw": "http://localhost:8090/players/ranking/winner",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8090",
 					"path": [
 						"players",
 						"ranking",
 						"winner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ranking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/players/ranking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"players",
+						"ranking"
 					]
 				}
 			},
