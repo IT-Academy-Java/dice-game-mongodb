@@ -1,17 +1,19 @@
 package com.itacademy.dicesgame.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
-@Table(name="game")
+//@Entity
+//@Table(name="game")
+@Document(collection = "game")
 public class Game implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String id;
 
     private int dice_value1;
     private int dice_value2;
@@ -30,7 +32,7 @@ public class Game implements Serializable {
         this.player = player;
     }
 
-    public Game(Long id, int dice_value1, int dice_value2, boolean win, Player player) {
+    public Game(String id, int dice_value1, int dice_value2, boolean win, Player player) {
         this.id = id;
         this.dice_value1 = dice_value1;
         this.dice_value2 = dice_value2;
