@@ -72,7 +72,7 @@ public class PlayerServiceImpl implements IPlayerService {
     }
 
     @Override
-    public Player findPlayer(Long player_id){
+    public Player findPlayer(String player_id){
         if(playerRepository.findById(player_id) != null){
             return playerRepository.findById(player_id);
         } else{
@@ -98,7 +98,7 @@ public class PlayerServiceImpl implements IPlayerService {
     }
 
     @Override
-    public Player updatePlayer(Long player_id, Player player){
+    public Player updatePlayer(String player_id, Player player){
         try {
             if(playerRepository.findById(player_id) == null || playerRepository.existsByName(player.getName())){
                 throw new PlayerNotFoundException("Player with id: " + player_id + " does not exist!!!");

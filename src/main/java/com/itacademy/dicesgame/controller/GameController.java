@@ -25,7 +25,7 @@ public class GameController {
 
     @GetMapping("/{id}/games")
     @ResponseBody
-    public List<Game> getGamesByPlayer(@PathVariable(value = "id") Long id) throws Exception{
+    public List<Game> getGamesByPlayer(@PathVariable(value = "id") String id) throws Exception{
         try {
             if(id != null && gameService.getGamesByPlayer(id) != null){
                 return gameService.getGamesByPlayer(id);
@@ -39,12 +39,12 @@ public class GameController {
     }
 
     @PostMapping("/{id}/games")
-    public ResponseEntity<Game> addRollDices(@PathVariable(value="id") Long id) throws Exception{
+    public ResponseEntity<Game> addRollDices(@PathVariable(value="id") String id) throws Exception{
         return ResponseEntity.ok().body(gameService.rollDices(id));
     }
 
     @DeleteMapping("/{id}/games")
-    public ResponseEntity deleteRollsByPlayer(@PathVariable(value = "id") Long id) throws Exception{
+    public ResponseEntity deleteRollsByPlayer(@PathVariable(value = "id") String id) throws Exception{
          try {
              if(id != null && playerService.findPlayer(id) != null){
                  gameService.deleteByPlayerId(id);

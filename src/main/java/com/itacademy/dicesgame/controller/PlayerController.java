@@ -37,7 +37,7 @@ public class PlayerController {
 
     @GetMapping("/{id}")
     @ResponseBody
-    public Player getPlayerById(@PathVariable(value = "id") Long id) throws Exception{
+    public Player getPlayerById(@PathVariable(value = "id") String id) throws Exception{
         return service.findPlayer(id);
     }
 
@@ -49,7 +49,7 @@ public class PlayerController {
     @PutMapping("/{id}")
     public ResponseEntity<?> updatePlayer(
             @RequestBody Player player,
-            @PathVariable("id") Long id
+            @PathVariable("id") String id
             ){
 
         return ResponseEntity.ok().body(service.updatePlayer(id, player));

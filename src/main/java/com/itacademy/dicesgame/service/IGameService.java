@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface IGameService {
 
-    public Game rollDices(Long player_id);
-    public void deleteByPlayerId(Long player_id);
-    public List<Game> getGamesByPlayer(Long player_id);
+    public Game rollDices(String player_id);
+    public void deleteByPlayerId(String player_id);
+    public List<Game> getGamesByPlayer(String player_id);
 
 }

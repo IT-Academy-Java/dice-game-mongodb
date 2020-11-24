@@ -21,7 +21,7 @@ public class GameServiceImpl implements IGameService {
     private IPlayerRepository playerRepository;
 
     @Override
-    public Game rollDices(Long player_id) {
+    public Game rollDices(String player_id) {
         if(playerRepository.findById(player_id) != null){
             try {
                 Game game = new Game(playerRepository.findById(player_id));
@@ -37,7 +37,7 @@ public class GameServiceImpl implements IGameService {
     }
 
     @Override
-    public void deleteByPlayerId(Long player_id) {
+    public void deleteByPlayerId(String player_id) {
         Player player = playerRepository.findById(player_id);
         try {
             gameRepository.deleteByPlayer(player);
@@ -47,7 +47,7 @@ public class GameServiceImpl implements IGameService {
     }
 
     @Override
-    public List<Game> getGamesByPlayer(Long player_id) {
+    public List<Game> getGamesByPlayer(String player_id) {
         return gameRepository.getGamesByPlayerId(player_id);
     }
 }
