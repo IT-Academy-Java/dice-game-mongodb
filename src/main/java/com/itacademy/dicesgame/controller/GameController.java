@@ -46,13 +46,12 @@ public class GameController {
     @DeleteMapping("/{id}/games")
     public ResponseEntity deleteRollsByPlayer(@PathVariable(value = "id") String id) throws Exception{
          try {
-             if(id != null && playerService.findPlayer(id) != null){
+             if(id != null && playerService.findPlayer(id) != null  && !gameService.getGamesByPlayer(id).isEmpty()){
                  gameService.deleteByPlayerId(id);
                  return ResponseEntity.ok().build();
              } else{
-                 throw new PlayerNotFoundException("Player with id -> " + id + " does not exist!!!");
+                 throw new PlayerNotFoundException("Player with id: " + id + " does not exist OR has no rolls yet!!!");
              }
-
          } catch (Exception e){
              System.out.println("Error ==>> " + e.getMessage());
          }
