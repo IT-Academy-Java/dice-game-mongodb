@@ -115,16 +115,34 @@ public class PlayerServiceImpl implements IPlayerService {
 
     @Override
     public Player getLoserPlayer() {
-        List<Player> listAllPlayers = getListPlayerWithRate();
-        listAllPlayers.sort(Comparator.comparing(Player::getSuccessRate));
-        return listAllPlayers.get(0);
+        try {
+            if(getListPlayerWithRate().isEmpty()){
+                throw new PlayerNotFoundException("No loser because NOT players yet!!!");
+            } else{
+                List<Player> listAllPlayers = getListPlayerWithRate();
+                listAllPlayers.sort(Comparator.comparing(Player::getSuccessRate));
+                return listAllPlayers.get(0);
+            }
+        } catch (Exception e){
+            System.out.println("Error ->>> " + e.getMessage());
+        }
+        return null;
     }
 
     @Override
     public Player getWinPlayer() {
-        List<Player> listAllPlayers = getListPlayerWithRate();
-        listAllPlayers.sort(Comparator.comparing(Player::getSuccessRate).reversed());
-        return listAllPlayers.get(0);
+        try {
+            if(getListPlayerWithRate().isEmpty()){
+                throw new PlayerNotFoundException("No winner because NOT players yet!!!");
+            } else {
+                List<Player> listAllPlayers = getListPlayerWithRate();
+                listAllPlayers.sort(Comparator.comparing(Player::getSuccessRate).reversed());
+                return listAllPlayers.get(0);
+            }
+        } catch (Exception e){
+            System.out.println("Error ->>> " + e.getMessage());
+        }
+        return null;
     }
 
     public List<Player> getListPlayerWithRate(){
